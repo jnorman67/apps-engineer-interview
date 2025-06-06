@@ -28,7 +28,6 @@ class Program
             sb.AppendLine($"        new Elector {{ " +
                 $"NameFirstDisplay = \"{voter.NameFirstDisplay}\", " +
                 $"NameLastDisplay = \"{voter.NameLastDisplay}\", " +
-                $"NameMiddleDisplay = {(voter.NameMiddleDisplay == null ? "null" : $"\"{voter.NameMiddleDisplay}\"")}, " +
                 $"AddrResidentialLine1 = \"{voter.AddrResidentialLine1}\", " +
                 $"AddrResidentialState = \"{voter.AddrResidentialState}\", " +
                 $"AddrResidentialCity = \"{voter.AddrResidentialCity}\", " +

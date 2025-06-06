@@ -1,4 +1,4 @@
-namespace Parentheses;
+namespace Exercise1;
 
 public static class ParenthesesValidator
 {

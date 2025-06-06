@@ -1,6 +1,6 @@
 using System;
 
-namespace Parentheses;
+namespace Exercise2;
 
 public class Elector
 {

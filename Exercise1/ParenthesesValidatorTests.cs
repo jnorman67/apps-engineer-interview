@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace Parentheses.Tests;
+namespace Exercise1.Tests;
 
 public class ParenthesesValidatorTests
 {

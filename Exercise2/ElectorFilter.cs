@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Parentheses;
+namespace Exercise2;
 
 public class ElectorFilter
 {

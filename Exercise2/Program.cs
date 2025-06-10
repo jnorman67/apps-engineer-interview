@@ -1,9 +1,8 @@
-
 namespace Exercise2;
 
 class Program
 {
-    static void Main(string[] args)
+    public static void Main(string[] _args)
     {
         var filter = GetFilter();
         var matchingElectors = FilterElectors(filter);
@@ -12,16 +11,16 @@ class Program
 
     }
 
-    static List<Elector> FilterElectors(ElectorFilter filter)
+    private static List<Elector> FilterElectors(ElectorFilter filter)
     {
-        var electors = ElectorDatabase.GetElectors();
+        var allElectors = ElectorDatabase.GetElectors();
+
         // TODO: Implement the filter
         return [];
-
     }
 
 
-    static ElectorFilter GetFilter()
+    private static ElectorFilter GetFilter()
     {
         return new ElectorFilter
         {

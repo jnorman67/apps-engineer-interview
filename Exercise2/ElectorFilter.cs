@@ -5,13 +5,13 @@ namespace Exercise2;
 
 public class ElectorFilter
 {
-    public string NameFirstDisplay { get; set; }
-    public string NameLastDisplay { get; set; }
-    public string AddrResidentialState { get; set; }
-    public string AddrResidentialCity { get; set; }
-    public string AddrResidentialZipCode { get; set; }
-    public string PartyRegistration { get; set; }
-    public string PrecinctName { get; set; }
+    public string? NameFirstDisplay { get; set; }
+    public string? NameLastDisplay { get; set; }
+    public string? AddrResidentialState { get; set; }
+    public string? AddrResidentialCity { get; set; }
+    public string? AddrResidentialZipCode { get; set; }
+    public string? PartyRegistration { get; set; }
+    public string? PrecinctName { get; set; }
 
     private int? _ageMin;
     public int? AgeMin

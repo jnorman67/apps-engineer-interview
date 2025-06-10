@@ -5,6 +5,27 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Create a filter and use it to find all electors in the database");
+        var filter = GetFilter();
+        var matchingElectors = FilterElectors(filter);
+
+        Console.WriteLine($"Found {matchingElectors.Count} matching electors");
+
+    }
+
+    static List<Elector> FilterElectors(ElectorFilter filter)
+    {
+        var electors = ElectorDatabase.GetElectors();
+        // TODO: Implement the filter
+        return [];
+
+    }
+
+
+    static ElectorFilter GetFilter()
+    {
+        return new ElectorFilter
+        {
+            AgeMin = 30,
+        };
     }
 }

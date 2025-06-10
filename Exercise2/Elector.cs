@@ -4,20 +4,20 @@ namespace Exercise2;
 
 public class Elector
 {
-    public string NameFirstDisplay { get; set; }
-    public string NameMiddleDisplay { get; set; }
-    public string NameLastDisplay { get; set; }
-    public string AddrResidentialLine1 { get; set; }
-    public string AddrResidentialState { get; set; }
-    public string AddrResidentialCity { get; set; }
-    public string AddrResidentialZipCode { get; set; }
+    public required string NameFirstDisplay { get; set; }
+    public string? NameMiddleDisplay { get; set; }
+    public required string NameLastDisplay { get; set; }
+    public required string AddrResidentialLine1 { get; set; }
+    public required string AddrResidentialState { get; set; }
+    public required string AddrResidentialCity { get; set; }
+    public required string AddrResidentialZipCode { get; set; }
     public float AddrResidentialLatitude { get; set; }
     public float AddrResidentialLongitude { get; set; }
-    public string AddrPrecision { get; set; }
-    public string AddrResidentialGeohash { get; set; }
+    public required string AddrPrecision { get; set; }
+    public required string AddrResidentialGeohash { get; set; }
     public bool Registered { get; set; }
-    public string PartyRegistration { get; set; }
-    public string PrecinctName { get; set; }
+    public required string PartyRegistration { get; set; }
+    public required string PrecinctName { get; set; }
 
     private int _lean;
     public int Lean

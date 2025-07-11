@@ -6,10 +6,10 @@ public class ParenthesesValidatorTests
 {
     [Theory]
     [InlineData("", true)]  // Empty string
-    public void AreParenthesesValid_ShouldReturnExpectedResult(string input, bool expected)
+    public void AreParenthesesBalanced_ShouldReturnExpectedResult(string input, bool expected)
     {
         // Act
-        bool result = ParenthesesValidator.AreParenthesesValid(input);
+        bool result = ParenthesesValidator.AreParenthesesBalanced(input);
 
         // Assert
         Assert.Equal(expected, result);

@@ -2,7 +2,7 @@ namespace Exercise1;
 
 public static class ParenthesesValidator
 {
-    public static bool AreParenthesesValid(string input)
+    public static bool AreParenthesesBalanced(string input)
     {
         if (string.IsNullOrEmpty(input))
         {
@@ -20,6 +20,11 @@ public static class ParenthesesValidator
             else if (c == ')')
             {
                 count--;
+            }
+
+            if (count < 0)
+            {
+                return false;
             }
 
         }

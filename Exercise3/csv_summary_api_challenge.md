@@ -1,8 +1,8 @@
-# Tiered Coding Exercise: Voter Contact CSV Summary and API Design
+# Canvassing Summary
 
 ## Scenario
 
-Door-to-door canvassers record voter responses and submit `.csv` files containing data about voter contact attempts. You’ve been asked to write logic to process these files and return a summary of contact outcomes, and then expose that summary through a simple API.
+Door-to-door canvassers record voter responses and submit `.csv` files containing data about voter contact attempts. Write logic to process these files and return a summary of contact outcomes. Then expose that summary through a simple API.
 
 ---
 
@@ -71,7 +71,7 @@ Imagine you've implemented the logic to summarize outcomes. Design an API endpoi
 - Expected response format
 - Error handling (e.g. malformed CSV, empty input)
 
-### Example (TypeScript/Express-style):
+### Example:
 
 ```http
 POST /api/contact-summary

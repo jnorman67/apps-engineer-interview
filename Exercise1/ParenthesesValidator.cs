@@ -21,12 +21,6 @@ public static class ParenthesesValidator
             {
                 count--;
             }
-
-            if (count < 0)
-            {
-                return false;
-            }
-
         }
 
         return count == 0;

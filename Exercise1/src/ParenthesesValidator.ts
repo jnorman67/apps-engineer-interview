@@ -13,16 +13,16 @@ export class ParenthesesValidator {
       return true;
     }
 
-    const stack: string[] = [];
+    let count = 0;
 
     for (const char of input) {
       if (char === "(") {
-        stack.push(char);
+        count++;
       } else if (char === ")") {
-        stack.pop();
+        count--;
       }
     }
 
-    return stack.length === 0;
+    return count === 0;
   }
 }
